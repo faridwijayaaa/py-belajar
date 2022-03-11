@@ -1,8 +1,4 @@
-import array as arr
-
-
-a = arr.array('i', [1, 2, 3]);
-
-# print(a[]);
+a = [5, 3, 5];
+print(a[0]);
 
 print("b\n"*5);
