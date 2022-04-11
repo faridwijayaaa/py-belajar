@@ -1,5 +1,6 @@
 import random
 import math
+from tracemalloc import start
 
 obj = 'ABCDE'
 data = []
@@ -60,7 +61,7 @@ while (i < fact_obj):
     i = i + 1
 
 # Convert data List to data String  dan menambahkan panjang rute
-data.sort()
+data.sort(reverse=True)
 print('------ Ascending Jalur ------')
 print('No\t Lintasan\t Panjang')
 for i in range (len(data)):
@@ -75,10 +76,6 @@ for i in range (len(temp_data)):
 
 # Sorting untuk mencari jalur terpendek 
 print('')
-print('------ Jalur terpendek Asc ------')
-print('No\t Lintasan\t Panjang')
 sort_lane = sorted(lane.items(), key=lambda x:x[1])
 x = 1
-for i in sort_lane:
-    print(x, '\t ', i[0], '\t ', i[1])
-    x += 1
+print("Jalur terpendek: ", sort_lane[0])
