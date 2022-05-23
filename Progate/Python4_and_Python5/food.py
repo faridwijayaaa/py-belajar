@@ -7,3 +7,5 @@ class Food(MenuItem):
         
     def info(self):
         return self.name + ': $' + str(self.price) + ' (' + str(self.calorie) + ' kkal)'
+    
+        
